@@ -27,6 +27,7 @@ export default function Hero() {
             <Button
               size="lg"
               className="bg-orange-500 hover:bg-orange-400 text-white"
+              onClick={() => (window.location.href = "tel:+221773614183")}
             >
               Devis Gratuit
             </Button>

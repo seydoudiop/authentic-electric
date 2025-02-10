@@ -10,6 +10,25 @@ export default function Header() {
           <span className="text-xl font-bold">AUTHENTIC ELECTRIC</span>
         </div>
         <nav className="hidden md:flex items-center gap-8">
+          <button
+            className="md:hidden text-white"
+            onClick={() => document.documentElement.requestFullscreen()}
+          >
+            <span className="sr-only">Fullscreen</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
+            </svg>
+          </button>
           <a href="#services" className="hover:text-orange-500">
             Services
           </a>
@@ -20,7 +39,10 @@ export default function Header() {
             Contact
           </a>
         </nav>
-        <Button className="bg-orange-500 hover:bg-orange-400 text-white">
+        <Button
+          className="bg-orange-500 hover:bg-orange-400 text-white"
+          onClick={() => (window.location.href = "tel:+221773614183")}
+        >
           Demander un Service
         </Button>
       </div>
